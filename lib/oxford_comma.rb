@@ -1,21 +1,3 @@
-=begin
-def oxford_comma(array)
-  output = array.map {|element| element}
-  output[0] + output[1..output.length - 2].join(", ") + ",and " + output[output.length - 1]
-end
-=end
-
-=begin
-def oxford_comma(array)
-  array.each do |arr_element|
-    if arr_element == 1
-      array.join
-    end
-  end
-end
-=end
-
-
 def oxford_comma(array)
   if array.length == 1
     array.join
@@ -35,6 +17,6 @@ def oxford_comma(array)
   elsif 2 < array.length
     array[-1].insert(0, "and ")
   end
-  array.join(", ")    
+  array.join(", ")
 end
 =end
